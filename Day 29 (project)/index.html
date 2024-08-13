@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" onclick="showPosts()">Posts</a></li>
+                <li><a href="#" onclick="showFriends()">Friends</a></li>
+                <li><a href="#" onclick="showMessages()">Messages</a></li>
+            </ul>
+        </aside>
+
+        <main class="content" id="dashboard-content">
+            <!-- Content will be dynamically inserted here -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

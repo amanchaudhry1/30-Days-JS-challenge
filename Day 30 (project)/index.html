@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Social Media Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>User Info</h2>
+            <div id="userProfile">
+                <img src="default-profile.png" alt="Profile Picture" id="profilePicture">
+                <p id="username">Username</p>
+                <p id="email">Email</p>
+            </div>
+            <button id="editProfileBtn">Edit Profile</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div id="responseMessage" style="display: none;">Thank you for your submission!</div>
+            <section id="postSection">
+                <h2>Create a Post</h2>
+                <form id="postForm">
+                    <input type="text" name="postText" placeholder="What's on your mind?" required>
+                    <button type="submit" id="submitPost">Post</button>
+                </form>
+            </section>
+
+            <section id="feed">
+                <h2>Feed</h2>
+                <div id="posts">
+                    <!-- Posts will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
